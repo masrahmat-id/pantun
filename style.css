@@ -261,7 +261,7 @@ body::before {
     text-align: center;
     font-family: 'Handlee', cursive;
     /* 1. Warna Teks Utama (Pink) */
-    color: #FF69B4; /* Hot Pink */
+    color: #FF6863; /* Hot Pink */
     font-size: 30px;
     
     /* 2. Stroke Warna Putih dan Bayangan Selaras */
@@ -304,9 +304,6 @@ body::before {
             width: 80%;
             max-width: 840px; /* Batasan lebar agar konten tidak terlalu lebar */
             color: #fff; 
-        }
-
-        .bgtr-femi { 
             background-color: rgba(0,0,0,0.7); /* Background transparan untuk box */
             padding: 20px;
             border-radius: 10px; /* Opsional: membuat sudut lebih lembut */
