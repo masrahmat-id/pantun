@@ -291,7 +291,7 @@ body::before {
             right: 0; 
             top: 0; 
             bottom: 0; 
-            background: rgba(96, 90, 82, 0.37); /* Overlay gelap/transparan */
+            background: rgba(96, 90, 82, 0.10); /* Overlay gelap/transparan */
         }
 
         /* Styling Konten Utama */
