@@ -26,19 +26,21 @@ button {
   cursor: url('//raku.yn.lt/files/miku-cursor2.png'), pointer;
 }
 
-a {
-  /* Warna teks tautan normal */
-  color: rgba(220, 53, 69, 1);
+/* Mengganti kursor saat mouse diarahkan ke tombol */
+button:hover {
+    /* Kursor gambar kustom Anda */
+    /* Pastikan URL gambar kursor ini valid dan dapat diakses */
+    cursor: url("//raku.yn.lt/files/miku-cursor2.png"), pointer;
+    
+    background-color: #218838; /* Sedikit lebih gelap saat hover */
+    transform: translateY(-2px); /* Efek sedikit terangkat */
 }
 
-a:hover, a:focus {
-  /* Mengatur kursor dari URL gambar saat hover atau fokus */
-  cursor: url("//raku.yn.lt/files/miku-cursor2.png"), auto;
-
-  /* Tambahan: Anda mungkin juga ingin mengubah tampilan teks saat hover/fokus */
-  text-decoration: underline; 
+button:active {
+    background-color: #1e7e34; /* Lebih gelap saat diklik */
+    transform: translateY(0); /* Kembali ke posisi semula saat diklik */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 /* Pseudo-element ::before untuk efek Redup Hitam (Dark Overlay) */
 body::before {
