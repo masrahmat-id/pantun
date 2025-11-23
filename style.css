@@ -7,19 +7,19 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    /* Properti untuk full layar */
+    
+    /* BACKGROUND GAMBAR ASLI */
     background-image: url('https://github.com/masrahmat-id/pantun/raw/main/bg2.jfif');
-    background-size: cover; /* Memastikan gambar menutupi seluruh area */
-    background-position: center; /* Memposisikan gambar di tengah */
-    background-attachment: fixed; /* Opsional: Membuat background tetap saat scrolling */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     
     /* Penting: Setel posisi relatif untuk pseudo-element ::before */
     position: relative;
-    /* Penting: Setel z-index agar konten di atas background */
-    z-index: 1; 
+    z-index: 1; /* Konten body di atas overlay */
 }
 
-/* Pseudo-element ::before untuk efek Blur */
+/* Pseudo-element ::before untuk efek Redup Hitam (Dark Overlay) */
 body::before {
     content: '';
     position: absolute;
@@ -27,17 +27,14 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    /* Masukkan gambar yang sama di pseudo-element */
-    background-image: url('https://github.com/masrahmat-id/pantun/raw/main/bg2.jfif');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     
-    /* Terapkan filter blur */
-    filter: blur(5px); /* Ganti nilai 5px sesuai tingkat blur yang diinginkan */
+    /* MENAMBAHKAN LAPISAN HITAM DENGAN OPACITY */
+    /* Nilai RGBA: (Merah, Hijau, Biru, Alpha/Opacity) */
+    /* (0, 0, 0) adalah warna hitam */
+    /* 0.5 adalah tingkat transparansi (50%). Ganti nilai ini untuk mengubah kegelapan */
+    background-color: rgba(0, 0, 0, 0.5); 
     
-    /* Penting: Setel z-index di bawah konten body */
-    z-index: -1; 
+    z-index: -1; /* Overlay di bawah konten body */
 }
 
 #envelope {
