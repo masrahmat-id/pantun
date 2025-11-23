@@ -236,7 +236,7 @@ body::before {
     font-weight: 800;
     font-style: normal;
     transition: all 0.1s linear;
-    background-color: transparent;
+    background-color: white;
     border: solid 2px #FF6863;
     border-radius: 4px;
     color: #FF6863;
@@ -309,7 +309,7 @@ body::before {
     font-family: 'Handlee', cursive;
     /* 1. Warna Teks Utama (Pink) */
     color: #FF6863; /* Pink */
-    font-size: 8px;
+    font-size: 15px;
     padding: 10px;
     
     /* 2. Stroke Warna Putih dan Bayangan Selaras */
