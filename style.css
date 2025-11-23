@@ -21,6 +21,11 @@ body {
     cursor: url("//raku.yn.lt/files/miku-cursor1.png"), auto;
 }
 
+/* Menggunakan kursor gambar dari URL untuk semua tombol */
+button {
+  cursor: url('//raku.yn.lt/files/miku-cursor2.png'), pointer;
+}
+
 a {
   /* Warna teks tautan normal */
   color: rgba(220, 53, 69, 1);
