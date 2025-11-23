@@ -18,7 +18,7 @@ body {
     position: relative;
     z-index: 1; /* Konten body di atas overlay */
     /*Cursor*/
-    cursor: url("https://github.com/masrahmat-id/femilya/raw/main/cursor-hellokitty.gif"), auto;
+    cursor: url("cursor-hellokitty2.png"), auto;
 }
 
 /* Menggunakan kursor gambar dari URL untuk semua tombol */
