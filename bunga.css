@@ -1,3 +1,11 @@
+.dekorasi1 {
+    /* Ganti '.nama-wadah' dengan class atau id dari <div> induk Anda */
+    position: relative;
+    height: 20px;
+    /* (Opsional) Tentukan tinggi wadah jika ingin bunga dan kupu-kupu berada di pojok dalamnya */
+    /* height: 20px; */ 
+}
+
 /* Definisikan putaran dari 0 derajat ke 360 derajat */
 @keyframes putarBunga {
   from {
