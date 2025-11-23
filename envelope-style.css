@@ -191,6 +191,41 @@ body {
     opacity: 1; /* Menampilkan pesan */
 }
 
+/* Dalam envelope-style.css */
+
+.envelope-message {
+    /* ... properti posisi lainnya ... */
+    
+    /* 1. Kunci Awal: Sembunyikan pesan (opacity: 0) */
+    opacity: 0; 
+    
+    /* 2. Kunci Awal: Posisikan pesan agak ke bawah (di dalam amplop) */
+    transform: translate(-50%, -50%) translateY(0); 
+    
+    /* Atur transisi agar munculnya halus */
+    transition: all 0.7s ease-in-out;
+    
+    /* Z-index 0 memastikan ia berada di bawah flap dan front */
+    z-index: 0; 
+    color: var(--font-color);
+}
+
+
+/* Kunci Animasi (Saat class 'open' ditambahkan oleh JavaScript) */
+.envelope.open .envelope-message {
+    /* 3. Kunci Akhir: Geser pesan ke atas (-50px) agar seolah 'keluar' dari amplop */
+    transform: translate(-50%, -50%) translateY(-50px); 
+    
+    /* 4. Kunci Akhir: Tampilkan pesan (opacity: 1) */
+    opacity: 1; 
+}
+
+/* Kunci Flap */
+.envelope.open .envelope-flap {
+    transform: rotateX(180deg);
+    z-index: 10; /* Z-index tinggi saat terbuka agar tidak menutupi pesan */
+}
+
 /*
 |--------------------------------------------------------------------------
 | 3. JAVASCRIPT UNTUK FUNGSI KLIK
