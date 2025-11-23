@@ -107,6 +107,7 @@ body::before {
     font-size: 15px;
     font-family: 'Handlee', cursive;
     color: black;
+    text-align: center;
 }
 
 .line1 {
@@ -258,7 +259,7 @@ body::before {
 }
 
 .femilya {
-    text-align: left;
+    text-align: center;
     font-family: 'Handlee', cursive;
     /* 1. Warna Teks Utama (Pink) */
     color: #FF6863; /* Pink */
