@@ -18,19 +18,19 @@ body {
     position: relative;
     z-index: 1; /* Konten body di atas overlay */
     /*Cursor*/
-    cursor: url("//raku.yn.lt/files/miku-cursor1.png"), auto;
+    cursor: url("https://github.com/masrahmat-id/femilya/raw/main/cute-cat-unicorn-1.png"), auto;
 }
 
 /* Menggunakan kursor gambar dari URL untuk semua tombol */
 button {
-  cursor: url('//raku.yn.lt/files/miku-cursor2.png'), pointer;
+  cursor: url('https://github.com/masrahmat-id/femilya/raw/main/cute-cat-unicorn-2.png'), pointer;
 }
 
 /* Mengganti kursor saat mouse diarahkan ke tombol */
 button:hover {
     /* Kursor gambar kustom Anda */
     /* Pastikan URL gambar kursor ini valid dan dapat diakses */
-    cursor: url("//raku.yn.lt/files/miku-cursor2.png"), pointer;
+    cursor: url("https://github.com/masrahmat-id/femilya/raw/main/cute-cat-unicorn-2.png"), pointer;
     
     background-color: #218838; /* Sedikit lebih gelap saat hover */
     transform: translateY(-2px); /* Efek sedikit terangkat */
