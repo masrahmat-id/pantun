@@ -79,7 +79,8 @@ body {
     height: 200px; /* Tinggi total kupu-kupu */
     transform-style: preserve-3d;
     perspective: 1000px;
-    animation: float 5s ease-in-out infinite alternate;
+    /* --- HAPUS ANIMASI float DI SINI --- */
+    /* animation: float 5s ease-in-out infinite alternate; */ 
 }
 
 .butterfly-wing {
@@ -116,7 +117,6 @@ body {
 }
 .right-wing img {
     left: -100px; /* Geser gambar ke kiri untuk menampilkan sayap kanan */
-    /* Ini - (lebar asli gambar / 2) */
 }
 
 /* Animasi untuk mengepak */
@@ -143,7 +143,9 @@ body {
     }
 }
 
-/* Animasi melayang (sama seperti sebelumnya) */
+/* --- HAPUS DEFINISI KEYFRAMES float DI SINI --- */
+/* Jika Anda tidak menggunakannya lagi, Anda bisa menghapusnya sepenuhnya */
+/*
 @keyframes float {
     0% {
         transform: translateY(0px) rotate(0deg);
@@ -155,3 +157,4 @@ body {
         transform: translateY(0px) rotate(0deg);
     }
 }
+*/
