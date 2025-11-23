@@ -30,9 +30,9 @@ body::before {
     
     /* MENAMBAHKAN LAPISAN HITAM DENGAN OPACITY */
     /* Nilai RGBA: (Merah, Hijau, Biru, Alpha/Opacity) */
-    /* (0, 0, 0) adalah warna hitam */
+    /* (255, 255, 255) adalah warna putih */
     /* 0.5 adalah tingkat transparansi (50%). Ganti nilai ini untuk mengubah kegelapan */
-    background-color: rgba(0, 0, 0, 0.1); 
+    background-color: rgba(255, 255, 255, 0.1); 
     
     z-index: -1; /* Overlay di bawah konten body */
 }
