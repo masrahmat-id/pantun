@@ -260,11 +260,21 @@ body::before {
 .valentine {
     text-align: center;
     font-family: 'Handlee', cursive;
-    color: #FF69B4; /* Warna Pink Cerah (Hot Pink) */
+    /* 1. Warna Teks Utama (Pink) */
+    color: #FF69B4; /* Hot Pink */
     font-size: 30px;
-    /* Efek Bayangan Teks (Shadow) */
-    /* Parameter: horizontal-shadow vertical-shadow blur color */
-    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.6); 
+    
+    /* 2. Stroke Warna Putih dan Bayangan Selaras */
+    /* Menggunakan multi-layer text-shadow untuk simulasi stroke */
+    text-shadow: 
+        /* Stroke Putih (putih solid di 4 arah) */
+        1px 1px 0 #FFF, /* kanan-bawah */
+        -1px 1px 0 #FFF, /* kiri-bawah */
+        1px -1px 0 #FFF, /* kanan-atas */
+        -1px -1px 0 #FFF, /* kiri-atas */
+        
+        /* Bayangan Selaras (Bayangan pink lembut, offset sedikit) */
+        3px 3px 5px rgba(255, 105, 180, 0.7); /* X-offset, Y-offset, Blur, Warna Shadow */
 }
 
 .cute-text {
