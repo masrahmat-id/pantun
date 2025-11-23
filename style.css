@@ -260,8 +260,11 @@ body::before {
 .valentine {
     text-align: center;
     font-family: 'Handlee', cursive;
-    color:rgb(20, 20, 20);
+    color: #FF69B4; /* Warna Pink Cerah (Hot Pink) */
     font-size: 30px;
+    /* Efek Bayangan Teks (Shadow) */
+    /* Parameter: horizontal-shadow vertical-shadow blur color */
+    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.6); 
 }
 
 .cute-text {
