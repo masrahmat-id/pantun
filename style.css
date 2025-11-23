@@ -15,7 +15,7 @@
 
 body {
     /* Atur Latar Belakang (Ganti 'bg.jpg' dengan nama file gambar Anda) */
-    background-image: url('https://raw.githubusercontent.com/masrahmat-id/pantun/main/bg.jfif'); 
+    background-image: url('https://github.com/masrahmat-id/pantun/raw/main/bg.jfif'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
