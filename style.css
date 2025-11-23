@@ -299,7 +299,7 @@ body::before {
             width: 80%;
             max-width: 840px; /* Batasan lebar agar konten tidak terlalu lebar */
             color: #fff; 
-            background-color: rgba(130, 130, 170, 0.7); /* Background transparan untuk box */
+            background-color: rgba(170, 170, 170, 0.5); /* Background transparan untuk box */
             padding: 20px;
             border-radius: 10px; /* Opsional: membuat sudut lebih lembut */
         }
@@ -322,5 +322,5 @@ body::before {
         -1px -1px 0 #FFF, /* kiri-atas */
         
         /* Bayangan Selaras (Bayangan pink lembut, offset sedikit) */
-        3px 3px 5px rgba(255, 105, 180, 0.7); /* X-offset, Y-offset, Blur, Warna Shadow */
+        2px 2px 3px rgba(255, 105, 180, 0.7); /* X-offset, Y-offset, Blur, Warna Shadow */
 }
