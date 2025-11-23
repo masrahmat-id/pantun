@@ -178,6 +178,19 @@ body {
     100% { transform: scale(1); opacity: 0.8; }
 }
 
+/* Dalam envelope-style.css */
+
+/* Efek Buka Amplop saat class 'open' ditambahkan */
+.envelope.open .envelope-flap {
+    transform: rotateX(180deg); /* Memutar penutup amplop */
+    z-index: 10;
+}
+
+.envelope.open .envelope-message {
+    transform: translate(-50%, -50%) translateY(-50px); /* Menggeser pesan ke atas */
+    opacity: 1; /* Menampilkan pesan */
+}
+
 /*
 |--------------------------------------------------------------------------
 | 3. JAVASCRIPT UNTUK FUNGSI KLIK
