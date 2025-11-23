@@ -1,3 +1,4 @@
+/* BUNGA 1 */
 /* Definisikan putaran dari 0 derajat ke 360 derajat */
 @keyframes putarBunga {
   from {
@@ -14,7 +15,7 @@
   animation-duration: 4s;          /* Durasi satu putaran (misalnya, 4 detik) */
   animation-iteration-count: infinite; /* Ulangi terus menerus */
   animation-timing-function: linear; /* Kecepatan konstan tanpa percepatan/perlambatan */
-  width: 30px; /* Ukuran yang sudah diubah */
+  width: 45px; /* Ukuran yang sudah diubah */
   
   /* Membuat gambar "mengapung" di sisi kiri */
   float: left;
@@ -24,22 +25,17 @@
   margin-bottom: 5px;
 }
 
+/* BUNGA 1 */
 /* Definisikan keyframes untuk gerakan kanan-kiri */
 @keyframes gerakKananKiri {
-  0% {
-    transform: translateX(0); /* Posisi awal */
+  0%, 100% {
+    transform: rotate(0deg); /* Posisi awal */
   }
   25% {
-    transform: translateX(15px); /* Geser 15px ke kanan */
-  }
-  50% {
-    transform: translateX(0); /* Kembali ke posisi awal */
+    transform: rotate(5deg); /* Miring 5 derajat ke kanan */
   }
   75% {
-    transform: translateX(-15px); /* Geser 15px ke kiri */
-  }
-  100% {
-    transform: translateX(0); /* Kembali ke posisi awal */
+    transform: rotate(-5deg); /* Miring 5 derajat ke kiri */
   }
 }
 
@@ -49,6 +45,16 @@
   height: auto;
   /* Membuat gambar "mengapung" di sisi kiri */
   float: right;
+
+  /* --- Tambahan Penting: Transformasi Akan Berpusat di Bagian Bawah --- */
+  transform-origin: bottom center; 
+
+  /* Menggunakan ROTATE (Rotasi) agar tampak melambai dari pangkal */
+  animation-name: gerakKananKiri;       /* Nama keyframes */
+  animation-duration: 4s;              /* Durasi satu siklus (misalnya, 4 detik) */
+  animation-iteration-count: infinite; /* Ulangi terus menerus */
+  animation-timing-function: ease-in-out; /* Animasi mulus */
+}
 
   animation-name: gerakKananKiri;       /* Nama keyframes */
   animation-duration: 4s;               /* Durasi satu siklus (misalnya, 4 detik) */
