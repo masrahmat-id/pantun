@@ -14,7 +14,7 @@
   animation-duration: 4s;          /* Durasi satu putaran (misalnya, 4 detik) */
   animation-iteration-count: infinite; /* Ulangi terus menerus */
   animation-timing-function: linear; /* Kecepatan konstan tanpa percepatan/perlambatan */
-  width: 100px; /* Ukuran yang sudah diubah */
+  width: 50px; /* Ukuran yang sudah diubah */
   
   /* Membuat gambar "mengapung" di sisi kiri */
   float: left;
@@ -22,4 +22,36 @@
   /* Menambahkan sedikit spasi di sekitar gambar agar tidak menempel pada teks/elemen lain */
   margin-right: 15px;
   margin-bottom: 5px;
+}
+
+/* Definisikan keyframes untuk gerakan kanan-kiri */
+@keyframes gerakKananKiri {
+  0% {
+    transform: translateX(0); /* Posisi awal */
+  }
+  25% {
+    transform: translateX(15px); /* Geser 15px ke kanan */
+  }
+  50% {
+    transform: translateX(0); /* Kembali ke posisi awal */
+  }
+  75% {
+    transform: translateX(-15px); /* Geser 15px ke kiri */
+  }
+  100% {
+    transform: translateX(0); /* Kembali ke posisi awal */
+  }
+}
+
+/* Terapkan animasi pada gambar bunga kuning */
+#bungaKuning {
+  width: 50px; /* Contoh ukuran, sesuaikan jika perlu */
+  height: auto;
+  /* Membuat gambar "mengapung" di sisi kiri */
+  float: right;
+
+  animation-name: gerakKananKiri;       /* Nama keyframes */
+  animation-duration: 4s;               /* Durasi satu siklus (misalnya, 4 detik) */
+  animation-iteration-count: infinite;  /* Ulangi terus menerus */
+  animation-timing-function: ease-in-out; /* Animasi mulus, lambat di awal dan akhir */
 }
