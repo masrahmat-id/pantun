@@ -17,7 +17,23 @@ body {
     /* Penting: Setel posisi relatif untuk pseudo-element ::before */
     position: relative;
     z-index: 1; /* Konten body di atas overlay */
+    /*Cursor*/
+    cursor: url("//raku.yn.lt/files/miku-cursor1.png"), auto;
 }
+
+a {
+  /* Warna teks tautan normal */
+  color: rgba(220, 53, 69, 1);
+}
+
+a:hover, a:focus {
+  /* Mengatur kursor dari URL gambar saat hover atau fokus */
+  cursor: url("//raku.yn.lt/files/miku-cursor2.png"), auto;
+
+  /* Tambahan: Anda mungkin juga ingin mengubah tampilan teks saat hover/fokus */
+  text-decoration: underline; 
+}
+
 
 /* Pseudo-element ::before untuk efek Redup Hitam (Dark Overlay) */
 body::before {
